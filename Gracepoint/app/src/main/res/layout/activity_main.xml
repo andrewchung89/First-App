@@ -1,0 +1,116 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gracepointlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:src="@drawable/gracepointlogo" />
+    
+    <TextView
+        android:id="@+id/business_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@id/gracepointlogo"
+        android:textStyle="bold"
+        android:text="Business Name: "/>
+
+    <ImageView
+        android:id="@+id/location_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/business_text"
+        android:layout_above="@id/email_text"
+        android:layout_toLeftOf="@id/business_text"
+        android:src="@drawable/locationlogo" />
+
+    <TextView
+        android:id="@+id/business_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/business_name"
+        android:layout_below="@id/gracepointlogo"
+        android:text="GracePoint Presbyterian Church"/>
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/business_text"
+        android:layout_toRightOf="@id/location_picture"
+        android:text="205 Burwood Road,Burwood "/>
+
+
+    <ImageView
+        android:id="@+id/email_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/email_text"
+        android:layout_below="@id/location_text"
+        android:layout_above="@id/blank"
+        android:src="@drawable/emaillogo" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/business_name"
+        android:layout_below="@id/location_text"
+        android:text="information@gracepoint.org.au"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/blank"
+        android:layout_below="@id/email_picture"
+        android:paddingTop="50dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Description:  " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/description"
+        android:text="At GracePoint we're a community that treasures Jesus and his saving work, with a longing to bring his saving and transforming work to our city. In everything we do at GracePoint we're looking to help people discover Jesus and follow Jesus as their greatest treasure in life. So at GracePoint, we seek to see the greatness and supremacy of Jesus and his saving work magnified in our city and world.
+We hope you'll visit us, or if you're new to our church we hope that you'll find at GracePoint a community that wants to walk with you on your journey whether you're looking to find out more about Jesus, or whether you're a disciple of Jesus wanting to serve Him."/>
+
+    <TextView
+        android:id="@+id/blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/business_name"
+        android:layout_below="@id/email_text"
+        android:text="" />
+
+
+
+</RelativeLayout>
